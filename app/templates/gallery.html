@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h1 class="my-4">Media Gallery</h1>
+    <div class="row">
+        {% for item in media %}
+            <div class="col-md-4">
+                <a href="{{ item.file.url }}">
+                    <img src="{{ item.file.url }}" class="img-fluid" alt="{{ itame.name }}">
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

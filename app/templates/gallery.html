@@ -6,8 +6,8 @@
     <div class="row">
         {% for item in media %}
             <div class="col-md-4">
-                <a href="{{ item.file.url }}">
-                    <img src="{{ item.file.url }}" class="img-fluid" alt="{{ itame.name }}">
+                <a href="/image/{{ item.pk }}">
+                    <img src="{{ item.file.url }}" class="img-fluid" alt="{{ item.name }}" style="max-height: 200px;">
                 </a>
             </div>
         {% endfor %}
